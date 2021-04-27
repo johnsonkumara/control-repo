@@ -12,8 +12,8 @@ mod 'tomcat',
   :git    => 'https://github.com/johnsonkumara/puppet-module-tomcat.git',
 #  :commit => '83401079053dca11d61945bd9beef9ecf7576cbf'
 
-mod 'java',
-  :git    => 'https://github.com/johnsonkumara/puppet-module-java.git',
+#mod 'java',
+#  :git    => 'https://github.com/johnsonkumara/puppet-module-java.git',
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
