@@ -1,4 +1,4 @@
-forge "http://forge.puppetlabs.com"
+forge 'http://forge.puppetlabs.com'
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
@@ -14,6 +14,3 @@ mod 'tomcat',
 
 #mod 'java',
 #  :git    => 'https://github.com/johnsonkumara/puppet-module-java.git',
-#mod 'apache',
-#  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
-#  :branch => 'docs_experiment'
