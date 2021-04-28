@@ -1,2 +1,5 @@
 ---
-message: "This node is using common data"
+tomcat::xms: "60m"
+tomcat::xmx: "104m"
+tomcat::user: "root"
+tomcat::group: "root"
