@@ -1,12 +1,13 @@
 node 'node1'{
 #      include base
-      class {'::tomcat':
-         xms           => '60m',
-         xmx           => '120m',
-         user          => 'root',
-         group         => 'root',
-         service_state => 'running'
-      }
+#      class {'::tomcat':
+#         xms           => '60m',
+#         xmx           => '120m',
+#         user          => 'root',
+#         group         => 'root',
+#         service_state => 'running'
+#      }
+       include tomcat
       tomcat::deploy {"sysfoo":
       deploy_url  => 'puppet:///modules/tomcat/sysfoo.war',
 
@@ -17,13 +18,14 @@ node 'node1'{
 }
 
 node 'node2'{
-     class { '::tomcat':
-         xms           => "70m",
-         xmx           => "130m",
-         user          => 'tomcat',
-         group         => 'tomcat',
-         service_state => 'running'
-      }
+       include tomcat
+#     class { '::tomcat':
+#         xms           => "70m",
+#         xmx           => "130m",
+#         user          => 'tomcat',
+#         group         => 'tomcat',
+#         service_state => 'running'
+#      }
      # include tomcat
      # include prefs
       notify {"***NODE2 Definition****":}
