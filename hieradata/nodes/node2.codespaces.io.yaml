@@ -1,0 +1,9 @@
+---
+tomcat::xms: "98m"
+tomcat::xmx: "130m"
+tomcat::user: "root"
+tomcat::group: "root"
+ntp::servers:
+  - 0.node2.pool.ntp.org
+  - 1.node2.pool.ntp.org
+  - 2.node2.pool.ntp.org

@@ -3,3 +3,5 @@ tomcat::xms: "87m"
 tomcat::xmx: "124m"
 tomcat::user: "root"
 tomcat::group: "root"
+classes:
+   - ntp

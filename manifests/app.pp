@@ -1,3 +1,4 @@
+hiera_include('classes')
 node 'node1'{
 #      include base
 #      class {'::tomcat':
